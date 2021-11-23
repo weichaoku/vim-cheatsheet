@@ -23,5 +23,6 @@ colorscheme gruvbox
 set background=dark
 highlight Normal ctermbg=none 
 ```
-
-
+### For Telescope NVIM
+https://github.com/neovim/neovim
+https://github.com/BurntSushi/ripgrep
