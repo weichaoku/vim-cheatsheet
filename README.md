@@ -66,6 +66,7 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+set mouse=a
 ```
 ### Useful Plug
 ```typescript=
@@ -79,6 +80,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
+Plug 'tpope/vim-commentary' "For commenting
+Plug 'ryanoasis/vim-devicons'
+Plug 'tc50cal/vim-terminal'
+Plug 'terryma/vim-multiple-cursors'
 ```
 
 ### Useful Map
@@ -94,5 +99,4 @@ highlight Normal ctermbg=none
 ```
 ### For Telescope NVIM
 https://github.com/neovim/neovim
-
 https://github.com/BurntSushi/ripgrep
