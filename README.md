@@ -130,7 +130,7 @@ function! TermToggle(height)
     if win_gotoid(g:term_win)
         hide
     else
-        botright new
+        belowright new
         exec "resize " . a:height
         try
             exec "buffer " . g:term_buf
