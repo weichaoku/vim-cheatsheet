@@ -148,11 +148,11 @@ endfunction
 ```
 ```typescript
 " Toggle terminal on/off (neovim)
-nnoremap <A-t> :call TermToggle(12)<CR>
-inoremap <A-t> <Esc>:call TermToggle(12)<CR>
-tnoremap <A-t> <C-\><C-n>:call TermToggle(12)<CR>
+nnoremap <silent> <C-t> :call TermToggle(10)<CR>
+inoremap <silent> <C-t> <Esc>:call TermToggle(10)<CR>
+tnoremap <silent> <C-t> <C-\><C-n>:call TermToggle(10)<CR>
 
 " Terminal go back to normal mode
-tnoremap <Esc> <C-\><C-n>
-tnoremap :q! <C-\><C-n>:q!<CR>
+tnoremap <silent> <Esc> <C-\><C-n>
+tnoremap <silent> :q! <C-\><C-n>:q!<CR>
 ```
