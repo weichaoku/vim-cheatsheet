@@ -67,6 +67,8 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set mouse=a
+"Duplicate info due to status line exists
+set noshowmode
 "This is for showing buffers only
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
