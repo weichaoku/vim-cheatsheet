@@ -67,6 +67,14 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set mouse=a
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#show_tab_type = 0
+let g:airline#extensions#tabline#close_symbol = '×'
+let g:airline#extensions#tabline#show_close_button = 0
 ```
 ### Useful Plug
 ```typescript=
@@ -89,6 +97,15 @@ Plug 'terryma/vim-multiple-cursors'
 ### Useful Map
 ```typescript=
 nnoremap <silent> <expr> <C-\> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:N    ERDTree<CR>"
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-h> <C-w>h
+map <C-Left> <C-w>h
+map <C-j> <C-w>j
+map <C-Down> <C-w>j
+map <C-Up> <C-w>k
+map <C-k> <C-w>k
+map <C-Right> <C-w>l
+map <C-l> <C-w>l
 ```
 ### For terminal color consistency
 https://github.com/gruvbox-community/gruvbox
